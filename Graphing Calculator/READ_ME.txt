@@ -1,0 +1,17 @@
+Jake Adicoff
+Mobile Computing
+Assignment 2, Calculator with variables and programs
+
+The simple calculator (assignment 2):
+Calculator builds and run on my machine. It has all basic functions of a calculator and all functions execute properly.  The main code is in the CalculatorBrain. This gets input form the viewController and computes 2 thing: the answer to the users desired computation and a string of the operation entered by the user. To construct both, there is a function that switches on the operation entered by the user and to compute the result of the operation, function closures in a dictionary are used to execute those operations. Types of operations are enumerated and the switch works on the enumeration. The user can also set a variable 'M' and use it in the calculator. This capability is implemented in a general way, and is only limited to 1 variable by the buttons on the calculator. After a value is saved to 'M', the previous program is rerun with the new value of 'M' (this is a little confusing to look at, but everything works as specified in assignment handout). The user can also backspace. This is done by keeping a property list of the current calculator program. When a user hits backspace, the last item of the property list is popped and the program is rerun using the program variable's setter method. 
+
+The grapher (assignment 3):
+Again, the calculator builds and runs on my machine. The calculator is able to take a function and graph it on a standard xy plane. When the function is graphed, the user can pan, move the origin, and zoom in the coordinate plane to view the graph of the function. For implementation, I made easy get and set methods for variables in the calculatorBrain, and chose to keep the data private. So to graph, I instantiated calculatorBrain in graph brain. When a user hits the graph button, the graphBrain uses its calculatorBrain and the stored function passed to it during the segue to construct an array of doubles that represent x and y values in CGPoint units with respect. The view Uses a protocol to get this array via the graphViewController, then loops through the array and draws a path with the array values. During the segue, the descriptionString is also sent to the graphViewController. This is displayed in a label in the graphView. The view is synced to the model, and whenever anything happens in the view (a gesture), the view class is updated, which requires that the model to update, then the view is redrawn.
+
+Bugs: no bugs
+
+Other notes:
+	1. pressing 2+++... (for example) will produce 2+2+4+8... Theres never been an easier way to 	compute a power of 2.
+	2. Full Disclosure: I used code from the posted lecture demo from Piazza to make the description string. I did this only because my code was very messy, and this implementation let my source code be a lot cleaner.
+	3. (FIXED IN THIS VERSION) I graphed my line by making a bezier path for each y value that is just a small circle centered at an x,y point. This works pretty well. When plotting a graph with an asymptote, the 'line' does not look continuous. I have tried sampling more points, which works well, and I'm able to get a smooth line, but it is obnoxiously slow. I took this functionality out, so when you graph something like 1/x you do get a pretty funny looking result
+	

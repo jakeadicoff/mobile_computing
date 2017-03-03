@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PageViewController" customModule="WordLens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-jI-VCp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OcX-fe-dPX" customClass="PageView" customModule="WordLens" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgC-Eg-DI9">
+                                        <rect key="frame" x="183" y="245" width="28" height="27"/>
+                                        <connections>
+                                            <segue destination="fRt-cW-k10" kind="popoverPresentation" identifier="popoverSegue" popoverAnchorView="bgC-Eg-DI9" id="C0a-7p-SGT">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </button>
+                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IE7-Sh-FRs">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <items>
+                                            <navigationItem id="88f-Gp-iJn">
+                                                <barButtonItem key="leftBarButtonItem" title="&lt; Take Another Picture 📷" id="XDI-HT-0xu">
+                                                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="TakeAnotherPic:" destination="BYZ-38-t0r" id="1zf-aj-BX6"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="OcX-fe-dPX" secondAttribute="trailing" id="EbL-Ru-XqA"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JvA-w4-U5h"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NQC-Q7-hf4"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="U5q-MY-kNS"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="leading" secondItem="nV4-jI-VCp" secondAttribute="leading" id="aDR-C6-lio"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="trailing" secondItem="nV4-jI-VCp" secondAttribute="trailing" id="e2p-fr-Ygx"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="top" secondItem="nV4-jI-VCp" secondAttribute="top" id="rL2-ZZ-1Ha"/>
+                            <constraint firstItem="OcX-fe-dPX" firstAttribute="bottom" secondItem="nV4-jI-VCp" secondAttribute="bottom" id="xoN-dV-VJP"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nFt-vW-M3s" appends="YES" id="FO6-YB-qjg"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nV4-jI-VCp" id="xns-e7-NRL"/>
+                        <outlet property="pageView" destination="OcX-fe-dPX" id="BLh-it-YfH"/>
+                        <outlet property="performSegueButton" destination="bgC-Eg-DI9" id="DJG-7M-GsZ"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer id="nFt-vW-M3s">
+                    <connections>
+                        <action selector="getTapLocationFromUser:" destination="BYZ-38-t0r" id="iAi-zl-taE"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="377"/>
+        </scene>
+        <!--Dictionary View Controller-->
+        <scene sceneID="mlw-6I-BAT">
+            <objects>
+                <viewController id="fRt-cW-k10" customClass="DictionaryViewController" customModule="WordLens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aOT-t7-b6C"/>
+                        <viewControllerLayoutGuide type="bottom" id="ydv-2j-fet"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ant-XF-b1q">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="VSq-nd-uQq">
+                                <rect key="frame" x="16" y="20" width="268" height="153"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yZ-RV-Bsn">
+                                        <rect key="frame" x="0.0" y="0.0" width="268" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lqQ-5f-598">
+                                        <rect key="frame" x="0.0" y="36" width="268" height="117"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VSq-nd-uQq" firstAttribute="top" secondItem="aOT-t7-b6C" secondAttribute="bottom" id="aIX-5E-Xpq"/>
+                            <constraint firstItem="VSq-nd-uQq" firstAttribute="trailing" secondItem="Ant-XF-b1q" secondAttribute="trailingMargin" id="djR-Bg-vaR"/>
+                            <constraint firstItem="VSq-nd-uQq" firstAttribute="leading" secondItem="Ant-XF-b1q" secondAttribute="leadingMargin" id="fT8-hv-lMM"/>
+                            <constraint firstItem="ydv-2j-fet" firstAttribute="top" secondItem="VSq-nd-uQq" secondAttribute="bottom" constant="27" id="t63-9c-fPX"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="300" height="200"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="200"/>
+                    <connections>
+                        <outlet property="definitionLabel" destination="lqQ-5f-598" id="Div-6G-YS8"/>
+                        <outlet property="wordLabel" destination="2yZ-RV-Bsn" id="yXf-Mo-AwA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lkh-hy-Ge5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960" y="377"/>
+        </scene>
+    </scenes>
+</document>

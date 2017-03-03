@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D0D3B7D1DAE8B3F0050AB70 /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D3B7C1DAE8B3F0050AB70 /* GraphViewController.swift */; };
+		8D0D3B7F1DAEAE070050AB70 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D3B7E1DAEAE070050AB70 /* GraphView.swift */; };
+		8D0D3B811DB06F260050AB70 /* GraphBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D3B801DB06F260050AB70 /* GraphBrain.swift */; };
+		8DC081361D85EDBE009B755D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC081351D85EDBE009B755D /* AppDelegate.swift */; };
+		8DC081381D85EDBE009B755D /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC081371D85EDBE009B755D /* CalculatorViewController.swift */; };
+		8DC0813B1D85EDBE009B755D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC081391D85EDBE009B755D /* Main.storyboard */; };
+		8DC0813D1D85EDBE009B755D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0813C1D85EDBE009B755D /* Assets.xcassets */; };
+		8DC081401D85EDBE009B755D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC0813E1D85EDBE009B755D /* LaunchScreen.storyboard */; };
+		8DC0814B1D85EDBE009B755D /* Adicoff_Jake_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC0814A1D85EDBE009B755D /* Adicoff_Jake_CalculatorTests.swift */; };
+		8DC081561D85EDBE009B755D /* Adicoff_Jake_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC081551D85EDBE009B755D /* Adicoff_Jake_CalculatorUITests.swift */; };
+		8DC081641D86321A009B755D /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC081631D86321A009B755D /* CalculatorBrain.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8DC081471D85EDBE009B755D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DC0812A1D85EDBE009B755D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC081311D85EDBE009B755D;
+			remoteInfo = Adicoff.Jake.Calculator;
+		};
+		8DC081521D85EDBE009B755D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8DC0812A1D85EDBE009B755D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC081311D85EDBE009B755D;
+			remoteInfo = Adicoff.Jake.Calculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8D0D3B7C1DAE8B3F0050AB70 /* GraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		8D0D3B7E1DAEAE070050AB70 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		8D0D3B801DB06F260050AB70 /* GraphBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphBrain.swift; sourceTree = "<group>"; };
+		8DC081321D85EDBE009B755D /* Adicoff.Jake.Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Adicoff.Jake.Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC081351D85EDBE009B755D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8DC081371D85EDBE009B755D /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		8DC0813A1D85EDBE009B755D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8DC0813C1D85EDBE009B755D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8DC0813F1D85EDBE009B755D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DC081411D85EDBE009B755D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC081461D85EDBE009B755D /* Adicoff.Jake.CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adicoff.Jake.CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC0814A1D85EDBE009B755D /* Adicoff_Jake_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adicoff_Jake_CalculatorTests.swift; sourceTree = "<group>"; };
+		8DC0814C1D85EDBE009B755D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC081511D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Adicoff.Jake.CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DC081551D85EDBE009B755D /* Adicoff_Jake_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adicoff_Jake_CalculatorUITests.swift; sourceTree = "<group>"; };
+		8DC081571D85EDBE009B755D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC081631D86321A009B755D /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DC0812F1D85EDBE009B755D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC081431D85EDBE009B755D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC0814E1D85EDBE009B755D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DC081291D85EDBE009B755D = {
+			isa = PBXGroup;
+			children = (
+				8DC081341D85EDBE009B755D /* Adicoff.Jake.Calculator */,
+				8DC081491D85EDBE009B755D /* Adicoff.Jake.CalculatorTests */,
+				8DC081541D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests */,
+				8DC081331D85EDBE009B755D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8DC081331D85EDBE009B755D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8DC081321D85EDBE009B755D /* Adicoff.Jake.Calculator.app */,
+				8DC081461D85EDBE009B755D /* Adicoff.Jake.CalculatorTests.xctest */,
+				8DC081511D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8DC081341D85EDBE009B755D /* Adicoff.Jake.Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				8DC081391D85EDBE009B755D /* Main.storyboard */,
+				8DC081371D85EDBE009B755D /* CalculatorViewController.swift */,
+				8DC081631D86321A009B755D /* CalculatorBrain.swift */,
+				8D0D3B7C1DAE8B3F0050AB70 /* GraphViewController.swift */,
+				8D0D3B7E1DAEAE070050AB70 /* GraphView.swift */,
+				8D0D3B801DB06F260050AB70 /* GraphBrain.swift */,
+				8DC0813C1D85EDBE009B755D /* Assets.xcassets */,
+				8DC0813E1D85EDBE009B755D /* LaunchScreen.storyboard */,
+				8DC081411D85EDBE009B755D /* Info.plist */,
+				8DC081351D85EDBE009B755D /* AppDelegate.swift */,
+			);
+			path = Adicoff.Jake.Calculator;
+			sourceTree = "<group>";
+		};
+		8DC081491D85EDBE009B755D /* Adicoff.Jake.CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8DC0814A1D85EDBE009B755D /* Adicoff_Jake_CalculatorTests.swift */,
+				8DC0814C1D85EDBE009B755D /* Info.plist */,
+			);
+			path = Adicoff.Jake.CalculatorTests;
+			sourceTree = "<group>";
+		};
+		8DC081541D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8DC081551D85EDBE009B755D /* Adicoff_Jake_CalculatorUITests.swift */,
+				8DC081571D85EDBE009B755D /* Info.plist */,
+			);
+			path = Adicoff.Jake.CalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DC081311D85EDBE009B755D /* Adicoff.Jake.Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DC0815A1D85EDBE009B755D /* Build configuration list for PBXNativeTarget "Adicoff.Jake.Calculator" */;
+			buildPhases = (
+				8DC0812E1D85EDBE009B755D /* Sources */,
+				8DC0812F1D85EDBE009B755D /* Frameworks */,
+				8DC081301D85EDBE009B755D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Adicoff.Jake.Calculator;
+			productName = Adicoff.Jake.Calculator;
+			productReference = 8DC081321D85EDBE009B755D /* Adicoff.Jake.Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8DC081451D85EDBE009B755D /* Adicoff.Jake.CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DC0815D1D85EDBE009B755D /* Build configuration list for PBXNativeTarget "Adicoff.Jake.CalculatorTests" */;
+			buildPhases = (
+				8DC081421D85EDBE009B755D /* Sources */,
+				8DC081431D85EDBE009B755D /* Frameworks */,
+				8DC081441D85EDBE009B755D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DC081481D85EDBE009B755D /* PBXTargetDependency */,
+			);
+			name = Adicoff.Jake.CalculatorTests;
+			productName = Adicoff.Jake.CalculatorTests;
+			productReference = 8DC081461D85EDBE009B755D /* Adicoff.Jake.CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8DC081501D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8DC081601D85EDBE009B755D /* Build configuration list for PBXNativeTarget "Adicoff.Jake.CalculatorUITests" */;
+			buildPhases = (
+				8DC0814D1D85EDBE009B755D /* Sources */,
+				8DC0814E1D85EDBE009B755D /* Frameworks */,
+				8DC0814F1D85EDBE009B755D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8DC081531D85EDBE009B755D /* PBXTargetDependency */,
+			);
+			name = Adicoff.Jake.CalculatorUITests;
+			productName = Adicoff.Jake.CalculatorUITests;
+			productReference = 8DC081511D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8DC0812A1D85EDBE009B755D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Adicoff - Mobile Computing";
+				TargetAttributes = {
+					8DC081311D85EDBE009B755D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8DC081451D85EDBE009B755D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8DC081311D85EDBE009B755D;
+					};
+					8DC081501D85EDBE009B755D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 8DC081311D85EDBE009B755D;
+					};
+				};
+			};
+			buildConfigurationList = 8DC0812D1D85EDBE009B755D /* Build configuration list for PBXProject "Adicoff.Jake.Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8DC081291D85EDBE009B755D;
+			productRefGroup = 8DC081331D85EDBE009B755D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8DC081311D85EDBE009B755D /* Adicoff.Jake.Calculator */,
+				8DC081451D85EDBE009B755D /* Adicoff.Jake.CalculatorTests */,
+				8DC081501D85EDBE009B755D /* Adicoff.Jake.CalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8DC081301D85EDBE009B755D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC081401D85EDBE009B755D /* LaunchScreen.storyboard in Resources */,
+				8DC0813D1D85EDBE009B755D /* Assets.xcassets in Resources */,
+				8DC0813B1D85EDBE009B755D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC081441D85EDBE009B755D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC0814F1D85EDBE009B755D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DC0812E1D85EDBE009B755D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0D3B7F1DAEAE070050AB70 /* GraphView.swift in Sources */,
+				8DC081641D86321A009B755D /* CalculatorBrain.swift in Sources */,
+				8D0D3B7D1DAE8B3F0050AB70 /* GraphViewController.swift in Sources */,
+				8D0D3B811DB06F260050AB70 /* GraphBrain.swift in Sources */,
+				8DC081381D85EDBE009B755D /* CalculatorViewController.swift in Sources */,
+				8DC081361D85EDBE009B755D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC081421D85EDBE009B755D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC0814B1D85EDBE009B755D /* Adicoff_Jake_CalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC0814D1D85EDBE009B755D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DC081561D85EDBE009B755D /* Adicoff_Jake_CalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8DC081481D85EDBE009B755D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC081311D85EDBE009B755D /* Adicoff.Jake.Calculator */;
+			targetProxy = 8DC081471D85EDBE009B755D /* PBXContainerItemProxy */;
+		};
+		8DC081531D85EDBE009B755D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8DC081311D85EDBE009B755D /* Adicoff.Jake.Calculator */;
+			targetProxy = 8DC081521D85EDBE009B755D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DC081391D85EDBE009B755D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DC0813A1D85EDBE009B755D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8DC0813E1D85EDBE009B755D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DC0813F1D85EDBE009B755D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8DC081581D85EDBE009B755D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8DC081591D85EDBE009B755D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8DC0815B1D85EDBE009B755D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Adicoff.Jake.Calculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake.Adicoff-Jake-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8DC0815C1D85EDBE009B755D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Adicoff.Jake.Calculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake.Adicoff-Jake-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8DC0815E1D85EDBE009B755D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Adicoff.Jake.CalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake.Adicoff-Jake-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adicoff.Jake.Calculator.app/Adicoff.Jake.Calculator";
+			};
+			name = Debug;
+		};
+		8DC0815F1D85EDBE009B755D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Adicoff.Jake.CalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake.Adicoff-Jake-CalculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Adicoff.Jake.Calculator.app/Adicoff.Jake.Calculator";
+			};
+			name = Release;
+		};
+		8DC081611D85EDBE009B755D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Adicoff.Jake.CalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake.Adicoff-Jake-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Adicoff.Jake.Calculator;
+			};
+			name = Debug;
+		};
+		8DC081621D85EDBE009B755D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Adicoff.Jake.CalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jake.Adicoff-Jake-CalculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Adicoff.Jake.Calculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8DC0812D1D85EDBE009B755D /* Build configuration list for PBXProject "Adicoff.Jake.Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC081581D85EDBE009B755D /* Debug */,
+				8DC081591D85EDBE009B755D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DC0815A1D85EDBE009B755D /* Build configuration list for PBXNativeTarget "Adicoff.Jake.Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC0815B1D85EDBE009B755D /* Debug */,
+				8DC0815C1D85EDBE009B755D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DC0815D1D85EDBE009B755D /* Build configuration list for PBXNativeTarget "Adicoff.Jake.CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC0815E1D85EDBE009B755D /* Debug */,
+				8DC0815F1D85EDBE009B755D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8DC081601D85EDBE009B755D /* Build configuration list for PBXNativeTarget "Adicoff.Jake.CalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DC081611D85EDBE009B755D /* Debug */,
+				8DC081621D85EDBE009B755D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8DC0812A1D85EDBE009B755D /* Project object */;
+}
